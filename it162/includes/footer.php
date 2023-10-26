@@ -1,6 +1,6 @@
      <!-- footer starts here-->
      <footer>
-      <p><small>&copy; 2023 by 
+      <p><small>&copy; 2023 - <?=date('y')?>
           <a href="contact.php">Vanessa Garcia</a>, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
