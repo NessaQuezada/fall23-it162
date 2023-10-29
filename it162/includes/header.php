@@ -15,7 +15,7 @@
      <header>
      <h1><i class="logo fa <?=$logo?>"<?=$logo_color?>></i> Vanessa's IT162 Website</h1>
      <nav class="topnav" id="myTopnav">
-     <?=makesLinks($nav1)?>
+     <?=makeLinks($nav1)?>
     
      <!--
        <a href="index.php" class="selected">Welcome</a>

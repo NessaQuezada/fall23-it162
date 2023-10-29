@@ -80,8 +80,16 @@ function makeLinks($nav1)
 {
         $myReturn = '';
          foreach($nav1 as $url => $text){
-            $myReturn .= '';
 
+        if($url == THIS_PAGE){
+            $myReturn .= "<a class=\"selected\" href=\"$url\">$text</a>";
+        }else{
+            $myReturn .= "<a href=\"$url\">$text</a>";
+
+        }
+
+
+           
          }
         return $myReturn;
 }
