@@ -1,11 +1,12 @@
 <?php
-/*  portal-config.php   
+/*  
+    portal-config.php   
 
     used to store all of our it162 configuration information
 
  */
 
- //echo basename($_SERVER['PHP_SELF']);
+ //echo basename ($_SERVER['PHP_SELF']);
 
  //prevents data from being sent early
 
@@ -33,15 +34,16 @@ switch (THIS_PAGE){
     break;   
     
     case 'contact.php':
-        $title = "Vanessa Garcia's ITi62 contact page";
+        $title = "Vanessa Garcia's IT162 contact page";
         $logo = 'fa-pencil-square-o';
         $PageID = 'Contact Vanessa';
         $logo_color = ' style="color:#0f0"';
     break;    
 
     default:
-        $title= THIS_PAGE;
+        $title = THIS_PAGE;
         $logo = '';//no icon by default
+        $PageID = 'Welcome';
 
 }
 
@@ -50,11 +52,12 @@ $nav1['big/index.php'] = "Big";
 $nav1['aia.php'] = "AIA";
 $nav1['flowchart.php'] = "Flowchart";
 $nav1['fp/index.php'] = "Final Project";
-$nav1['contact.php'] = "Contact Vanessa"
+$nav1['contact.php'] = "Contact Vanessa";
 
-/* here we're creating a function to generate links and keep the highlight on the current page
+/* 
+      here we're creating a function to generate links and keep the highlight on the current page
 
-       <a href="index.php" class="active">Welcome</a>
+       <a href="index.php" class="selected">Welcome</a>
        <a href="elements.php">HTML Elements</a>
        <a href="aia.php">AIA</a>
        <a href="big/index.php">BIG</a>
@@ -73,22 +76,14 @@ Call like this:
 echo makeLinks($nav1); #in which $nav1 is an associative array of links
 */
 
-
-<function makeLinks($nav1)
+function makeLinks($nav1)
 {
-    $myReturn = '';
-    foreach($nav1 as $url => $text){
+        $myReturn = '';
+         foreach($nav1 as $url => $text){
+            $myReturn .= '';
 
-    if($url ==THIS_PAGE){
-            $myReturn .= "class=\"selected\" href=\"$url\">$text</a>";
-    }else{
-            $myReturn .= "<a href=\"$url\">$text</a>";
-        }    
-
-    
-
-    return $myReturn;
-    }
-
+         }
+        return $myReturn;
 }
- ?>
+
+?>

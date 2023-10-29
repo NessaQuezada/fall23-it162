@@ -1,4 +1,4 @@
-<?php include 'portal-config.php'?>
+<?php include 'portal-config.php';?>
 <!DOCTYPE html>
 <html lang="en">
  <head>
@@ -15,10 +15,10 @@
      <header>
      <h1><i class="logo fa <?=$logo?>"<?=$logo_color?>></i> Vanessa's IT162 Website</h1>
      <nav class="topnav" id="myTopnav">
-     <?=makeLinks($nav1)?>
+     <?=makesLinks($nav1)?>
     
      <!--
-       <a href="index.php" class="active">Welcome</a>
+       <a href="index.php" class="selected">Welcome</a>
        <a href="elements.php">HTML Elements</a>
        <a href="aia.php">AIA</a>
        <a href="big/index.php">BIG</a>
